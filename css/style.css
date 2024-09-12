@@ -141,6 +141,10 @@ h3{
 .section3{
     padding: 0px 100px;
     background-color: #012A22;
+    /* z-index: 4; */
+}
+.section3 .txt4 {
+    margin-bottom: 50px;
 }
 .section3 .txt4 h3{
     color:white;
@@ -150,31 +154,123 @@ h3{
 }
 .section3 .txt5{
     display: flex;
+    margin-left: 20px;
 }
-.section3 .txt5 .sb1{
+.section3 .txt6{
+    display: flex;
+    padding-bottom: 50px;
+    margin-left: 20px;
+}
+.section3 .txt6 .sb1{
     width:33%;
     margin: 20px;
-    border-right:0.5px solid;
+    /* z-index: 1; */
+    position: relative;
+    width:28%;
 }
-.section3 .txt5 .sb2{
+.section3 .txt6 .sb2{
     width:33%;
     margin: 20px;
+    /* z-index: 1; */
+    position: relative;
+    width:28%;
 }
-.section3 .txt5 .sb3{
+.section3 .txt6 .sb3{
     width:33%;
     margin: 20px;
+    /* z-index: 1; */
+    position: relative;
+    width:28%;
 }
 .section3 .txt5 img{
     margin: 20px 0px;
 }
-.section3 .txt5 h3{
+.section3 .txt6 h3{
     color:white;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.section3 .txt5 p{
+.section3 .txt6 p{
     color:white;
     font-size: 18px;
     font-weight: 200;
 }
+.section3 .txt6 .sb2 img{
+    margin-bottom: 10px;
+} 
+.section3 .txt6 .sb3 img{
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #012A22;
+}
+.txt7{
+    background-color:white;
+    height: 50vh;
+    margin: 0px 100px;
+    display: flex;
+    font-family: SpaceMono;
+    padding-left: 60px;
+}
+.txt7 .f1{
+    width:50%;
+    margin:70px 0px 0px 70px;
+}
+.txt7 .f1 img{
+    margin-bottom: 50px;
+}
+.txt7 .f2{
+    width:20%;
+}
+.txt7 .f2{
+    width:20%;
+}
+.txt7 ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.txt7 ul{
+    list-style-type: none;
+}
+.txt7 ul li {
+    padding: 10px 0px;
+}
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 0px 10px;
+}
+
+.play-btn, .pause-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.pause-btn {
+    display: none;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.video-container:hover .pause-btn {
+    display: block;
+}
+
+
